@@ -3,6 +3,6 @@ Script to install AC, Decal, Virindi bundle, and Thwargle on linux. This was wri
 
 The script will download and install most things for you, but you must have the AC installer, and update files (dat and exe) in ~/Downloads/ACInstall for it to work.
 
-Instructions are given in terminal in red and you will be prompted to do a few things along the way.
+Instructions are given in terminal in red and you will be prompted to do a few things along the way. If at any point the installer appears to be stuck, try hitting enter. The instructions may have scrolled off screen and it is actually waiting on user input.
 
 Take it for what it is, and dont hold me responsible if it bricks you linux install, steals your car, and burns down your house...
