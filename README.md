@@ -16,7 +16,7 @@ Take it for what it is, and dont hold me responsible if it bricks you linux inst
 
 
 
-Feel like helping me purchase some books or equipment to further my studies? Part of all donations recieved will be given to other open source projects that I use.
+Feel like getting me a coffee or helping me purchase some books or equipment to further my studies? Part of all donations recieved will be given to other open source projects that I use.
 
 LTC: MQ61qp1BiMtkrkwEzwoofkDrzjdUGpRz7J
 
