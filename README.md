@@ -10,5 +10,6 @@ Take it for what it is, and dont hold me responsible if it bricks you linux inst
 
 
 Feel like helping me purchase some books or equipment to further my studies? Part of all recieved donations will be given to other open source projects that I use.
+
 LTC: MQ61qp1BiMtkrkwEzwoofkDrzjdUGpRz7J
 BTC: 3CsXsgKFfHKq1oVL2G5qoEbuy4wQ2erM6X
