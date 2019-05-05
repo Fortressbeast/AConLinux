@@ -64,7 +64,7 @@ echo -e "$RED"
 read  -n 1 -s -r -p "Select your AC folder (should be C:\Games\AC). Then update Decal Plugins. NOTE: The 'OK' after update may be behind the main window. Exit decal agent after update has completed. Press any key to launch decal"
 echo -e "$WIPE"
 
-gnome-terminal -t "Decal select AC folder and update" -- bash -c "WINEARCH=win32 WINEPREFIX=~/wine/AsheronsCall wine /home/dan/wine/AsheronsCall/drive_c/Games/Decal/DenAgent.exe"
+gnome-terminal -t "Decal select AC folder and update" -- bash -c "WINEARCH=win32 WINEPREFIX=~/wine/AsheronsCall wine ~/wine/AsheronsCall/drive_c/Games/Decal/DenAgent.exe"
 
 echo -e "$RED"
 read  -n 1 -s -r -p "Perss any key after you have completed the Decal Setup. Noet: Make sure you have exited out of decal before preceding"
