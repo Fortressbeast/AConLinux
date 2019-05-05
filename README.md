@@ -1,4 +1,7 @@
 # AConLinux
+As always a big thanks to the groups that are working to keep our favorite game alive.
+
+
 Script to install AC, Decal, Virindi bundle, and Thwargle on linux. This was written and tested on Ubuntu 18.10, but should work on on others(maybe?). Still new to linux, and scripting so there may be a lot of issues, but there seems to be a need and I want to learn.
 
 The script will download and install most things for you, but you must have the AC installer, and update files (dat and exe) in ~/Downloads/ACInstall for it to work.
