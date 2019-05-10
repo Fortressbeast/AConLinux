@@ -4,11 +4,14 @@ As always a big thanks to the groups that are working to keep our favorite game 
 
 Script to install AC, Decal, Virindi bundle, and Thwargle on linux. This was written and tested on Ubuntu 18.10, but should work on on others(maybe?). Still new to linux, and scripting so there may be a lot of issues, but there seems to be a need and I want to learn.
 
-The script will download and install most things for you, but you must have the AC installer, and update files (dat and exe) in ~/Downloads/ACInstall for it to work.
+The script will download and install most things for you, except the AC update files.
 
-Instructions are given in terminal in red and you will be prompted to do a few things along the way. If at any point the installer appears to be stuck, try hitting enter. The instructions may have scrolled off screen and it is actually waiting on user input.
+Instructions are given in terminal in and you will be prompted to do a few things along the way. If at any point the installer appears to be stuck, try hitting enter. The instructions may have scrolled off screen and it is actually waiting on user input.
 
 Take it for what it is, and dont hold me responsible if it bricks you linux install, steals your car, and burns down your house...
+
+
+Huge thanks to Aerbax for the quality of life adds, teaching a lot of new bash tricks, and testing on Manjaro.
 
 
 
