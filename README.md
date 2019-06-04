@@ -11,7 +11,7 @@ Instructions are given in terminal in and you will be prompted to do a few thing
 Take it for what it is, and dont hold me responsible if it bricks you linux install, steals your car, and burns down your house...
 
 
-Huge thanks to Aerbax for the quality of life adds, teaching a lot of new bash tricks, and testing on Manjaro.
+Huge thanks to Aerbax for the quality of life adds, teaching me a lot of new bash tricks, and testing on Manjaro.
 
 
 
