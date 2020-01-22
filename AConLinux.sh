@@ -172,7 +172,8 @@ WINEARCH=win32 WINEPREFIX="${ACBOTTLE}/AsheronsCall" wine msiexec /i ${ACBOTTLE}
 echo -e "\n${BLUE}Installing Official VCRUN2005 SP1${WHITE}"
 read  -n 1 -s -r -p "Press any key to continue"
 echo -e "$WIPE"
-wget -O "${ACBOTTLE}/VCRun2005sp1.exe" "https://download.microsoft.com/download/e/1/c/e1c773de-73ba-494a-a5ba-f24906ecf088/vcredist_x86.exe"
+##wget -O "${ACBOTTLE}/VCRun2005sp1.exe" "https://download.microsoft.com/download/e/1/c/e1c773de-73ba-494a-a5ba-f24906ecf088/vcredist_x86.exe"
+wget -O "${ACBOTTLE}/VCRun2005sp1.exe" "https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x86.EXE"
 WINEARCH=win32 WINEPREFIX="${ACBOTTLE}/AsheronsCall" wine ${ACBOTTLE}/VCRun2005sp1.exe 
 
 
