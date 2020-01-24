@@ -25,7 +25,7 @@ POL_Debug_Init
 ##Presentation
 POL_SetupWindow_presentation "$TITLE" "$EDITOR" "$GAME_URL" "$AUTHOR" "$PREFIX"
 ##PreCheck
-POL_SetupWindow_question "Do you have the Asheron's Call install (ac1install.exe) and patch (ac_data.zip) files in $USER/Downloads " "Precheck"
+POL_SetupWindow_question "Do you have the Asheron's Call install (ac1install.exe) and patch (ac_data.zip) files in /home/$USER/Downloads " "Precheck"
 
 	if [ "$APP_ANSWER" = "TRUE" ]
 	then 
