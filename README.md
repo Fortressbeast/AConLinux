@@ -3,21 +3,16 @@ As always a big thanks to the groups that are working to keep our favorite game 
 
 **NEW VERSION COMING SOON(ISH). Decided that it will be easier for everyone if i swith to a Play on Linux script. No ETA as of yet.**
 
-Script to install AC, Decal, Virindi bundle, and Thwargle on linux. This was written and tested on Ubuntu 18.10, but should work on on others(maybe?). Still new to linux, and scripting so there may be a lot of issues, but there seems to be a need and I want to learn.
+Script to install AC, Decal, Virindi bundle, and Thwargle using Play on Linux. This was written and tested on Ubuntu 18.04, but should work on on others(maybe?). Still new to linux, and scripting so there may be a lot of issues, but there seems to be a need and I want to learn.
 
-The script will download and install most things for you, except the AC update files.
+The script is a Work in Progess and as such does not have any checking to make sure files exists or other "user proof" logic.
 
-Instructions are given in terminal in and you will be prompted to do a few things along the way. If at any point the installer appears to be stuck, try hitting enter. The instructions may have scrolled off screen and it is actually waiting on user input.
+Instructions are given in PoL message windows when needed. Consider running Wine32ForPoL.sh (Deb) to install the prerequisites.
 
 Take it for what it is, and dont hold me responsible if it bricks you linux install, steals your car, and burns down your house...
 
 
-Huge thanks to Aerbax for the quality of life adds, teaching me a lot of new bash tricks, and testing on Manjaro.
-
-
-
-
-
+Still huge thanks to Aerbax for teaching me a lot of bash tricks.
 
 
 Feel like getting me a coffee or helping me purchase some books or equipment to further my studies? Part of all donations recieved will be given to other open source projects that I use.
