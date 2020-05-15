@@ -1,0 +1,31 @@
+name: Asheron's Call
+game_slug: AC
+version: AC for Emaulators
+slug: Asheron's Call
+runner: wine
+
+script:
+  game:
+    exe: $GAMEDIR/prefix/drive_c/Games/AC/acclient.exe
+    prefix: $GAMEDIR/prefix
+    arch: win32
+    working_dir: $GAMEDIR/prefix/drive_c/Games/AC
+  files:
+  - installer: "N/A:Select the game's setup file"
+  installer:
+  - task:
+      executable: installer
+      name: wineexec
+      prefix: $GAMEDIR/prefix
+      arch: win32
+  wine:
+    Desktop: false
+    overrides:
+      ddraw.dll: n
+  system:
+    terminal: false
+    env:
+      WINEDLLOVERRIDES: d3d11=
+      SOMEENV: true
+-install_complete_text: "This is a test message after install"
+
