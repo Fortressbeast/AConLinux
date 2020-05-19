@@ -20,12 +20,11 @@ script:
       arch: win32
   wine:
     Desktop: false
+    dxvk: false
     overrides:
-      ddraw.dll: n
+      ddraw.dll:
   system:
     terminal: false
     env:
-      WINEDLLOVERRIDES: d3d11=
+      WINEDLLOVERRIDES:
       SOMEENV: true
--install_complete_text: "This is a test message after install"
-
