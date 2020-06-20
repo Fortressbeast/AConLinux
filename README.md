@@ -1,7 +1,8 @@
 # AConLinux
 As always a big thanks to the groups that are working to keep our favorite game alive.
 
-**NEW VERSION COMING SOON(ISH). Decided that it will be easier for everyone if I swith to a Lutris script. No ETA on decal ect, but AC install works.**
+**NEW VERSION COMING SOON(ISH). Decided that it will be easier for everyone if I swith to a Lutris script. No ETA on decal ect, but AC install works.** 
+20200620: Passed my exam, so I have time to start working on this again. Hoping to have something soon.
 
 Script to install Asheron's Call, Decal*, Virindi bundle*, and Thwargle* using Lutris (*WIP). This was written and tested on Ubuntu 19.10, but should work on on others(maybe?). Still new to linux, and scripting so there may be a lot of issues, but there seems to be a need and I want to learn.
 
