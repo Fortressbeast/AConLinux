@@ -1,0 +1,89 @@
+name: DecalPlugins
+game_slug: AC
+version: Plugins for Asheron's Call
+slug: DecalPlugins
+runner: wine
+
+script:
+  game:
+    requires: AC
+    prefix: $GAMEDIR
+    arch: win32
+    working_dir: $GAMEDIR/drive_c/Games/DecalPlugins
+  files:
+  - dx2010: https://lutris.net/files/tools/directx-2010.tar.gz
+  - VC2005SP1: https://web.archive.org/web/20190419092632/https://download.microsoft.com/download/e/1/c/e1c773de-73ba-494a-a5ba-f24906ecf088/vcredist_x86.exe
+  - Plugins: http://www.virindi.net/plugins/updates/VirindiInstaller1008.zip
+  installer:
+  - execute:
+      command: mkdir -p $GAMEDIR/drive_c/Games/VirindiPlugins
+  - extract:
+      dst: $CACHE/dxsetup
+      file: dx2010
+  - extract:
+      dst: $CACHE/Plugins
+      file: Plugins
+  - task:
+      app: "dotnet20 win7"
+      arch: win32
+      name: winetricks
+      prefix: $GAMEDIR
+  - task:
+      app: "dotnet40"
+      arch: win32
+      name: winetricks
+      prefix: $GAMEDIR
+  - task:
+      app: "msxml4"
+      arch: win32
+      name: winetricks
+      prefix: $GAMEDIR
+  - task:
+      app: "pngfilt"
+      arch: win32
+      name: winetricks
+      prefix: $GAMEDIR
+  - task:
+      app: "xmllite"
+      arch: win32
+      name: winetricks
+      prefix: $GAMEDIR
+  - task:
+      args: /Q    
+      executable: VC2005SP1
+      name: wineexec
+      prefix: $GAMEDIR
+      arch: win32
+  - task:
+      app: "dotnet11"
+      arch: win32
+      name: winetricks
+      prefix: $GAMEDIR
+  - task:
+      args: /silent
+      executable: $CACHE/dxsetup/DXSETUP.exe
+      name: wineexec
+      prefix: $GAMEDIR
+      arch: win32    
+  - task:
+      app: "riched20"
+      arch: win32
+      name: winetricks
+      prefix: $GAMEDIR
+  - task:
+      app: "gdiplus"
+      arch: win32
+      name: winetricks
+      prefix: $GAMEDIR        
+  - task:
+      executable: $CACHE/Plugins/VirindiInstaller.exe
+      args:  /DIR=C:\Games\VirindiPlugins
+      name: wineexec
+      prefix: $GAMEDIR
+      arch: win32
+  wine:
+    Desktop: false
+    dxvk: false
+  system:
+    terminal: false
+

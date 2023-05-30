@@ -1,0 +1,44 @@
+name: ThwargleLauncher
+game_slug: AC
+version: Thwargle launcher for AC
+slug: Thwargle
+runner: wine
+
+script:
+  game:
+    requires: AC
+    exe: $GAMEDIR/drive_c/Games/Thwargle/ThwargLauncher.exe
+    prefix: $GAMEDIR
+    arch: win32
+    working_dir: $GAMEDIR/drive_c/Games/Thwargle
+  files:
+  - ThwargInstaller: http://www.thwargle.com/thwarglauncher/updates/ThwargLauncherInstaller.exe
+  - DotNet452: https://download.microsoft.com/download/E/2/1/E21644B5-2DF2-47C2-91BD-63C560427900/NDP452-KB2901907-x86-x64-AllOS-ENU.exe
+  installer:
+  - execute:
+      command: mkdir -p $GAMEDIR/drive_c/Games/Thwargle
+  - task:
+      app: "corefonts win7"
+      arch: win32
+      name: winetricks
+      prefix: $GAMEDIR
+  - task:
+      executable: DotNet452
+      name: wineexec
+      arch: win32
+      prefix: $GAMEDIR
+      return_code: "0"
+
+  - task:
+      executable: ThwargInstaller
+      args:  /DIR=C:\Games\Thwargle
+      name: wineexec
+      prefix: $GAMEDIR
+      arch: win32
+  wine:
+    Desktop: false
+    dxvk: false
+  system:
+    terminal: false
+
+

@@ -1,0 +1,28 @@
+name: Decal
+game_slug: AC
+version: Decal for Asheron's Call
+slug: Asheron's Call
+runner: wine
+
+script:
+  game:
+    exe: $GAMEDIR/drive_c/Games/Decal/DenAgent.exe
+    prefix: $GAMEDIR
+    arch: win32
+    working_dir: $GAMEDIR/drive_c/Games/Decal/
+  files:
+    - DecalInstaller: https://www.decaldev.com/releases/2975/Decal.msi  
+  installer:
+  - execute:
+      command: mkdir -p $GAMEDIR/drive_c/Games/Decal
+  - task:
+      executable: DecalInstaller
+      args: /DIR="C:/Games/Decal"
+      name: wineexec
+      prefix: $GAMEDIR
+      arch: win32
+  wine:
+    Desktop: false
+    dxvk: false
+  system:
+    terminal: false

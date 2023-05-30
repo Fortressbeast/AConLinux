@@ -1,0 +1,41 @@
+name: Asheron's Call
+game_slug: AC
+version: AC for Emaulators
+slug: Asheron's Call
+runner: wine
+
+script:
+  game:
+    exe: $GAMEDIR/drive_c/Games/AC/acclient.exe
+    prefix: $GAMEDIR
+    arch: win32
+    working_dir: $GAMEDIR/drive_c/Games/AC
+  files:
+  - ACInstaller: "N/A:Please select ac1install.exe"
+  - DatFiles: "N/A:Please select ac-updates.zip"
+  installer:
+  - execute:
+      command: mkdir -p $GAMEDIR/drive_c/Games/AC
+  - extract:
+      dst: $CACHE/Dat
+      file: DatFiles
+  - task:
+      executable: ACInstaller
+      args:  /DIR="C:/Games/AC"
+      name: wineexec
+      prefix: $GAMEDIR
+      arch: win32
+  - execute:
+      command: cp $CACHE/Dat/* $GAMEDIR/drive_c/Games/AC
+
+  wine:
+    version: lutris-GE-Proton8-7-x86_64
+    Desktop: false
+    dxvk: false
+    overrides:
+      ddraw.dll:
+  system:
+    terminal: false
+    env:
+      WINEDLLOVERRIDES:
+      SOMEENV: true
