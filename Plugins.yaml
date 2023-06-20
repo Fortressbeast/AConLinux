@@ -34,6 +34,11 @@ script:
       name: winetricks
       prefix: $GAMEDIR
   - task:
+      app: "dotnet48"
+      arch: win32
+      name: winetricks
+      prefix: $GAMEDIR
+  - task:
       app: "msxml4"
       arch: win32
       name: winetricks

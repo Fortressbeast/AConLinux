@@ -23,13 +23,6 @@ script:
       name: winetricks
       prefix: $GAMEDIR
   - task:
-      executable: DotNet452
-      name: wineexec
-      arch: win32
-      prefix: $GAMEDIR
-      return_code: "0"
-
-  - task:
       executable: ThwargInstaller
       args:  /DIR=C:\Games\Thwargle
       name: wineexec
