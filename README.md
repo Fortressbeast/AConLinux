@@ -2,6 +2,7 @@
 As always a big thanks to the groups that are working to keep our favorite game alive.
 
 **NEW VERSION: Lutris install edition**
+
 **Fixed .net crash in when installing Thwargle Launcher** 
 
 Install and play tested on PopOS 22.04 and Fedora 37. Also tested installing in Manjaro vm, but did not play test due to lack of 3d support.
