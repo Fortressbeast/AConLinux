@@ -43,6 +43,7 @@ script:
       arch: win32
       name: winetricks
       prefix: $GAMEDIR
+      return_code: 256
   - task:
       app: "pngfilt"
       arch: win32
