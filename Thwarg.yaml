@@ -13,14 +13,24 @@ script:
     working_dir: $GAMEDIR/drive_c/Games/Thwargle
   files:
   - ThwargInstaller: http://www.thwargle.com/thwarglauncher/updates/ThwargLauncherInstaller.exe
+  - DotNet48: https://download.microsoft.com/download/f/3/a/f3a6af84-da23-40a5-8d1c-49cc10c8e76f/NDP48-x86-x64-AllOS-ENU.exe
   installer:
   - execute:
       command: mkdir -p $GAMEDIR/drive_c/Games/Thwargle
+
   - task:
       app: "corefonts win7"
       arch: win32
       name: winetricks
       prefix: $GAMEDIR
+  
+  - task:
+      executable: DotNet48
+      name: wineexec
+      prefix: $GAMEDIR
+      arch: win32
+      return_code: 49664
+
   - task:
       executable: ThwargInstaller
       args:  /DIR=C:\Games\Thwargle
