@@ -1,13 +1,11 @@
 # AConLinux
 As always a big thanks to the groups that are working to keep our favorite game alive.
 
-**NEW VERSION: Lutris install edition**
+**NEW VERSION: Updated 2025/12/18** 
 
-**Fixed .net crash in when installing Thwargle Launcher** 
+Install and play tested on Debian 13. Also tested installing in Manjaro vm, but did not play test due to lack of 3d support.
 
-Install and play tested on PopOS 22.04 and Fedora 37. Also tested installing in Manjaro vm, but did not play test due to lack of 3d support.
-
-Scripts to install Asheron's Call, Decal, Virindi bundle, and Thwargle using Lutris (See install doc for dirs). This was written on PopOS 22.04/Fedora 37. Still learning so there may be a lot of issues, but there seems to be a need and I like solving puzzles.
+Scripts to install Asheron's Call, Decal, Virindi bundle, and Thwargle using Lutris (See install doc for dirs). Still learning so there may be a lot of issues, but there seems to be a need and I like solving puzzles.
 
 For just AC you only need AC.yaml. For Decal ect you need to run through the AC install first and then the other yaml files. Please refer the dirs for both setups. 
 
