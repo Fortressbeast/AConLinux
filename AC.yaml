@@ -29,7 +29,7 @@ script:
       command: cp $CACHE/Dat/* $GAMEDIR/drive_c/Games/AC
 
   wine:
-    version: lutris-GE-Proton8-26-x86_64
+    version: wine-ge-8-26-x86_64
     Desktop: false
     dxvk: false
     overrides:
