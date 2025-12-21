@@ -2,7 +2,8 @@
 As always a big thanks to the groups that are working to keep our favorite game alive.
 
 **NEW VERSION: Updated 2025/12/18** 
-Special thanks to Aircorian for helping test this verion!
+
+Special thanks to Aircorian for helping test this version!
 
 Install and play tested on Debian 13. Also tested installing in Manjaro vm, but did not play test due to lack of 3d support.
 
